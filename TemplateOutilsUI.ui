@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.4" author="PygubuDesigner 0.41.2">
+  <project>
+    <settings>
+      <setting id="name">OutilUI_Template</setting>
+      <setting id="description">ddfssdf</setting>
+      <setting id="module_name">Template_OutilsUI</setting>
+      <setting id="template">codescript</setting>
+      <setting id="main_widget">ID_OutilsUI</setting>
+      <setting id="main_classname">OutilUI</setting>
+      <setting id="main_menu" />
+      <setting id="output_dir">.</setting>
+      <setting id="output_dir2" />
+      <setting id="import_tkvariables">True</setting>
+      <setting id="use_ttk_styledefinition_file">False</setting>
+      <setting id="use_i18n">False</setting>
+      <setting id="all_ids_attributes">True</setting>
+      <setting id="generate_code_onsave">True</setting>
+      <setting id="use_window_centering_code">True</setting>
+      <setting id="ttk_style_definition_file" />
+    </settings>
+    <customwidgets />
+  </project>
+  <object class="tk.Tk" id="ID_OutilsUI" named="True">
+    <property name="baseName">baseName</property>
+    <child>
+      <object class="ttk.Frame" id="ID_Section_app" named="True">
+        <property name="height">200</property>
+        <property name="padding">2</property>
+        <property name="width">500</property>
+        <layout manager="pack">
+          <property name="anchor">n</property>
+          <property name="expand">true</property>
+          <property name="fill">both</property>
+          <property name="side">left</property>
+        </layout>
+        <child>
+          <object class="ttk.Frame" id="ID_Section_Forms" named="True">
+            <property name="borderwidth">2</property>
+            <property name="class_">A</property>
+            <property name="height">200</property>
+            <property name="relief">groove</property>
+            <property name="width">200</property>
+            <layout manager="pack">
+              <property name="anchor">sw</property>
+              <property name="expand">true</property>
+              <property name="fill">both</property>
+              <property name="side">right</property>
+            </layout>
+            <child>
+              <object class="customtkinter.CTkTabview" id="ID_NavOption1_form" named="True">
+                <layout manager="pack">
+                  <property name="anchor">center</property>
+                  <property name="expand">true</property>
+                  <property name="fill">both</property>
+                  <property name="padx">4</property>
+                  <property name="side">top</property>
+                </layout>
+                <child>
+                  <object class="customtkinter.CTkTabview.Tab" id="ID_Tab1" named="True">
+                    <property name="label" translatable="yes">REQ tab 1</property>
+                    <child>
+                      <object class="ttk.Frame" id="ID_TabContainer_1" named="True">
+                        <property name="height">200</property>
+                        <property name="width">200</property>
+                        <layout manager="pack">
+                          <property name="expand">True</property>
+                          <property name="fill">both</property>
+                          <property name="side">top</property>
+                        </layout>
+                        <child>
+                          <object class="pygubu.forms.ttkwidget.Label" id="DYN_label_datauser" named="True">
+                            <property name="anchor">w</property>
+                            <property name="field_name">DYN_FN_label_datauser</property>
+                            <property name="text" translatable="yes">DYN label datauser</property>
+                            <property name="textvariable">string:DYN_UI_lb_datauser</property>
+                            <layout manager="pack">
+                              <property name="anchor">n</property>
+                              <property name="side">left</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="pygubu.forms.ttkwidget.Entry" id="DYN_entry_datauser" named="True">
+                            <property name="exportselection">true</property>
+                            <property name="field_name">DYN_FN_data_datauser</property>
+                            <property name="invalidcommand" type="command" cbtype="entry_validate" args="%d %i %P %s %S %v %V %W">OutilsUIValidationError</property>
+                            <property name="text" translatable="yes">Lf1 Datasss</property>
+                            <property name="textvariable">string:DYN_UI_data_datauser</property>
+                            <property name="validate">focusout</property>
+                            <property name="validatecommand" type="command" cbtype="entry_validate" args="%d %i %P %s %S %v %V %W">OutilsUIValidate</property>
+                            <layout manager="pack">
+                              <property name="anchor">n</property>
+                              <property name="side">left</property>
+                            </layout>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="customtkinter.CTkTabview.Tab" id="DYN_Tab2" named="True">
+                    <property name="label" translatable="yes">DYN tab 2</property>
+                    <child>
+                      <object class="ttk.Frame" id="DYN_TabContainer_2" named="True">
+                        <property name="height">200</property>
+                        <property name="width">200</property>
+                        <layout manager="pack">
+                          <property name="expand">True</property>
+                          <property name="fill">both</property>
+                          <property name="side">top</property>
+                        </layout>
+                        <child>
+                          <object class="ttkwidgets.LinkLabel" id="linklabel1">
+                            <property name="text" translatable="yes">linklabel1</property>
+                            <layout manager="pack">
+                              <property name="side">top</property>
+                            </layout>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="customtkinter.CTkTabview.Tab" id="DYN_Tab3" named="True">
+                    <property name="label" translatable="yes">DYN tab 3</property>
+                    <child>
+                      <object class="ttk.Frame" id="DYN_TabContainer_3" named="True">
+                        <property name="height">200</property>
+                        <property name="width">200</property>
+                        <layout manager="pack">
+                          <property name="expand">True</property>
+                          <property name="fill">both</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="customtkinter.CTkTabview" id="DYN_NavOption2_form" named="True">
+                <layout manager="pack">
+                  <property name="anchor">center</property>
+                  <property name="expand">true</property>
+                  <property name="fill">both</property>
+                  <property name="padx">4</property>
+                  <property name="side">top</property>
+                </layout>
+                <child>
+                  <object class="customtkinter.CTkTabview.Tab" id="tab1" named="True">
+                    <property name="label" translatable="yes">Info--</property>
+                    <child>
+                      <object class="ttk.Frame" id="frame21" named="True">
+                        <property name="height">200</property>
+                        <property name="width">200</property>
+                        <layout manager="pack">
+                          <property name="expand">True</property>
+                          <property name="fill">both</property>
+                          <property name="side">top</property>
+                        </layout>
+                        <child>
+                          <object class="pygubu.forms.ttkwidget.Label" id="label5" named="True">
+                            <property name="anchor">w</property>
+                            <property name="field_name">DYN_FN_label_datauser</property>
+                            <property name="text" translatable="yes">lab</property>
+                            <property name="textvariable">string:DYN_UI_lb_datauser</property>
+                            <layout manager="pack">
+                              <property name="anchor">n</property>
+                              <property name="side">left</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="pygubu.forms.ttkwidget.Entry" id="entry4" named="True">
+                            <property name="exportselection">true</property>
+                            <property name="field_name">DYN_FN_data_datauser</property>
+                            <property name="invalidcommand" type="command" cbtype="entry_validate" args="%d %i %P %s %S %v %V %W">OutilsUIValidationError</property>
+                            <property name="text" translatable="yes">g</property>
+                            <property name="textvariable">string:DYN_UI_data_datauser3</property>
+                            <property name="validate">focusout</property>
+                            <property name="validatecommand" type="command" cbtype="entry_validate" args="%d %i %P %s %S %v %V %W">OutilsUIValidate</property>
+                            <layout manager="pack">
+                              <property name="anchor">n</property>
+                              <property name="side">left</property>
+                            </layout>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Message" id="ID_AppMessages" named="True">
+                <property name="anchor">nw</property>
+                <property name="takefocus">false</property>
+                <property name="text" translatable="yes">DEF message</property>
+                <property name="textvariable">string:UI_App_Messages</property>
+                <property name="width">600</property>
+                <layout manager="pack">
+                  <property name="expand">false</property>
+                  <property name="fill">x</property>
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="ID_Section_Navigation" named="True">
+            <property name="borderwidth">2</property>
+            <property name="height">200</property>
+            <property name="relief">groove</property>
+            <property name="width">200</property>
+            <layout manager="pack">
+              <property name="anchor">nw</property>
+              <property name="expand">true</property>
+              <property name="fill">y</property>
+              <property name="side">top</property>
+            </layout>
+            <child>
+              <object class="ttk.Frame" id="ID_SectionNavApp" named="True">
+                <property name="borderwidth">5</property>
+                <property name="height">200</property>
+                <layout manager="pack">
+                  <property name="anchor">n</property>
+                  <property name="fill">x</property>
+                  <property name="side">top</property>
+                </layout>
+                <containerlayout manager="pack">
+                  <property name="anchor">nw</property>
+                </containerlayout>
+                <child>
+                  <object class="ttk.Frame" id="ID_FrameNavOption1" named="True">
+                    <property name="borderwidth">2</property>
+                    <property name="height">200</property>
+                    <property name="padding">0</property>
+                    <property name="relief">raised</property>
+                    <property name="width">200</property>
+                    <layout manager="pack">
+                      <property name="anchor">n</property>
+                      <property name="fill">x</property>
+                      <property name="side">top</property>
+                    </layout>
+                    <child>
+                      <object class="ttk.Button" id="ID_NavOption1" named="True">
+                        <property name="command" type="command" cbtype="with_wid">ChangeSelectedNavOption</property>
+                        <property name="compound">left</property>
+                        <property name="image">icon_placehorder_nav1.32x32.png</property>
+                        <property name="padding">4</property>
+                        <property name="style">Toolbutton</property>
+                        <property name="takefocus">true</property>
+                        <property name="text" translatable="yes">DEF NavOption1</property>
+                        <property name="textvariable">string:UI_NavOption1</property>
+                        <layout manager="pack">
+                          <property name="anchor">n</property>
+                          <property name="expand">false</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Frame" id="DYN_FrameNavOption2" named="True">
+                    <property name="borderwidth">2</property>
+                    <property name="height">200</property>
+                    <property name="padding">0</property>
+                    <property name="relief">groove</property>
+                    <property name="width">200</property>
+                    <layout manager="pack">
+                      <property name="anchor">n</property>
+                      <property name="expand">false</property>
+                      <property name="fill">x</property>
+                      <property name="side">top</property>
+                    </layout>
+                    <child>
+                      <object class="ttk.Button" id="DYN_NavOption2" named="True">
+                        <property name="command" type="command" cbtype="with_wid">ChangeSelectedNavOption</property>
+                        <property name="compound">left</property>
+                        <property name="image">icon_placehorder_nav2.32x32.png</property>
+                        <property name="padding">4</property>
+                        <property name="style">Toolbutton</property>
+                        <property name="takefocus">true</property>
+                        <property name="text" translatable="yes">DYN NavOption2</property>
+                        <property name="textvariable">string:UI_NavOption2</property>
+                        <layout manager="pack">
+                          <property name="anchor">n</property>
+                          <property name="expand">false</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Frame" id="DYN_FrameNavOption3" named="True">
+                    <property name="borderwidth">2</property>
+                    <property name="height">200</property>
+                    <property name="padding">0</property>
+                    <property name="relief">raised</property>
+                    <property name="width">200</property>
+                    <layout manager="pack">
+                      <property name="anchor">n</property>
+                      <property name="expand">false</property>
+                      <property name="fill">x</property>
+                      <property name="side">top</property>
+                    </layout>
+                    <child>
+                      <object class="ttk.Button" id="DYN_NavOption3" named="True">
+                        <property name="command" type="command" cbtype="with_wid">ChangeSelectedNavOption</property>
+                        <property name="compound">left</property>
+                        <property name="image">icon_placehorder_nav3.32x32.png</property>
+                        <property name="padding">4</property>
+                        <property name="style">Toolbutton</property>
+                        <property name="takefocus">true</property>
+                        <property name="text" translatable="yes">DYN NavOption3</property>
+                        <property name="textvariable">string:UI_NavOption3</property>
+                        <layout manager="pack">
+                          <property name="anchor">n</property>
+                          <property name="expand">false</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Frame" id="ID_Section_Config" named="True">
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout manager="pack">
+                  <property name="anchor">s</property>
+                  <property name="expand">false</property>
+                  <property name="fill">x</property>
+                  <property name="side">bottom</property>
+                </layout>
+                <child>
+                  <object class="ttk.Button" id="ID_NavConfig" named="True">
+                    <property name="command" type="command" cbtype="with_wid">ChangeSelectedNavOption</property>
+                    <property name="image">icon_placehorder_config.32x32.png</property>
+                    <property name="text" translatable="yes">button1</property>
+                    <property name="textvariable">string:UI_NavConfig</property>
+                    <layout manager="pack">
+                      <property name="anchor">s</property>
+                      <property name="expand">false</property>
+                      <property name="side">left</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Button" id="ID_Aide" named="True">
+                    <property name="command" type="command" cbtype="with_wid">ChangeSelectedNavOption</property>
+                    <property name="image">icon_placehorder_aide.32x32.png</property>
+                    <property name="text" translatable="yes">button2</property>
+                    <property name="textvariable">string:UI_Aide</property>
+                    <layout manager="pack">
+                      <property name="anchor">s</property>
+                      <property name="expand">false</property>
+                      <property name="side">right</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Button" id="ID_ToggleLoginOption" named="True">
+                    <property name="command" type="command" cbtype="with_wid">ChangeSelectedNavOption</property>
+                    <property name="image">icon_placehorder_toggleLogin.32x32.png</property>
+                    <property name="text" translatable="yes">button4</property>
+                    <property name="textvariable">string:UI_ToggleLoginOption</property>
+                    <layout manager="pack">
+                      <property name="anchor">s</property>
+                      <property name="expand">false</property>
+                      <property name="side">bottom</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
