@@ -74,14 +74,17 @@ class OutilUI(baseui.OutilUIUI):
     def showOnlyform(self, navwidget_id):   
         allNavButton  = {}
         for  aaa in self.ID_SectionNavApp.children.values():   
-            print(f"aaa: {aaa.cget('widgetName')}")
+            
+                        
+            print(f"aaa: {aaa.winfo_name()}")
             for  navbutton_widget in aaa.children.values():
-                print(f"navbutton_widget: {navbutton_widget.cget('widgetName')}")
-                allNavButton[navbutton_widget.cget('widgetName')] =navbutton_widget
+                print(f"navbutton_widget: {navbutton_widget.winfo_name()}")
+                allNavButton[navbutton_widget.winfo_name()] =navbutton_widget
 
         navselected = allNavButton[navwidget_id]
         lastnavselected = allNavButton[self.LastNavigationSelected] 
-        navform = self.ID_Section_Forms.children[navselected.cget("class")]
+        navform = self.ID_Section_Forms.children[navselected.winfo_class()]    
+                                                 # cget("class")]
         lastform = self.ID_Section_Forms.children[lastnavselected.cget("class")]
         lastform.pack_forget()
         navform.pack()
@@ -97,7 +100,6 @@ class OutilUI(baseui.OutilUIUI):
     def ChangeSelectedNavOption(self, widget_id):
         # multiple widgets can have the same command
             self.showOnlyform(widget_id)
-
             print(f"ChangeSelectedNavOption called with widget_id: {widget_id}")
         
 
